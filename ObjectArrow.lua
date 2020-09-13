@@ -523,23 +523,18 @@ end
 function GetHeadshotDamageMultiplier(searchEntity, searchLocation)
 
 	for i, attach in pairs(validHeadshotAttachments) do
-	  
-		print(attach)
-		  
+	
 		local attachId = searchEntity:ScriptLookupAttachment(attach)
 		  
-		print(attachId)
+		-- check for a headshot
 	  
 		if attachId ~= 0 then
 			local attachDistance = VectorDistance(searchEntity:GetAttachmentOrigin(attachId), searchLocation)
 			if attachDistance < HEADSHOT_DISTANCE then
-				print("HEADSHOT!")
 				return HEADSHOT_MULTIPLIER
 			end
 		end	  
     end
-
-	print("No headshot :(")
 
 	return 1
 end
