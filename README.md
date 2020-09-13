@@ -1,6 +1,6 @@
 # Half Life: Alyx - Recurve Bow
 
-This is the code I wrote for a custom bow and arrow for use in the Half Life: Alyx campaign.
+This is the code I wrote for a custom bow, useable in the Half Life: Alyx campaign.
 
 It can be a bit messy in places but there are plenty of features and workarounds that could transferrable for other addons.
 
